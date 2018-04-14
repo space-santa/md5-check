@@ -11,20 +11,20 @@
 #define UI_ZLMD5CHECK_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QGridLayout>
-#include <QtGui/QGroupBox>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QMainWindow>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QStatusBar>
-#include <QtGui/QToolBar>
-#include <QtGui/QWidget>
+#include <QAction>
+#include <QApplication>
+#include <QButtonGroup>
+#include <QGridLayout>
+#include <QGroupBox>
+#include <QHeaderView>
+#include <QLabel>
+#include <QLineEdit>
+#include <QMainWindow>
+#include <QPushButton>
+#include <QSpacerItem>
+#include <QStatusBar>
+#include <QToolBar>
+#include <QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -172,18 +172,18 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0, QApplication::UnicodeUTF8));
-        actionNew->setText(QApplication::translate("MainWindow", "new", 0, QApplication::UnicodeUTF8));
-        actionInfo->setText(QApplication::translate("MainWindow", "info", 0, QApplication::UnicodeUTF8));
-        actionQuit->setText(QApplication::translate("MainWindow", "quit", 0, QApplication::UnicodeUTF8));
-        actionSave->setText(QApplication::translate("MainWindow", "save", 0, QApplication::UnicodeUTF8));
-        groupBox_2->setTitle(QApplication::translate("MainWindow", "Files", 0, QApplication::UnicodeUTF8));
-        pushButton_Open->setText(QApplication::translate("MainWindow", "File 1", 0, QApplication::UnicodeUTF8));
-        pushButton_Open2->setText(QApplication::translate("MainWindow", "File 2", 0, QApplication::UnicodeUTF8));
-        pushButton_Calc->setText(QApplication::translate("MainWindow", "get md5sum", 0, QApplication::UnicodeUTF8));
-        groupBox->setTitle(QApplication::translate("MainWindow", "Result", 0, QApplication::UnicodeUTF8));
-        label_Match->setText(QApplication::translate("MainWindow", "match", 0, QApplication::UnicodeUTF8));
-        toolBar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", 0, QApplication::UnicodeUTF8));
+        MainWindow->setWindowTitle("MainWindow");
+        actionNew->setText("new");
+        actionInfo->setText("info");
+        actionQuit->setText("quit");
+        actionSave->setText("save");
+        groupBox_2->setTitle("Files");
+        pushButton_Open->setText("File 1");
+        pushButton_Open2->setText("File 2");
+        pushButton_Calc->setText("get md5sum");
+        groupBox->setTitle("Result");
+        label_Match->setText("match");
+        toolBar->setWindowTitle("toolBar");
     } // retranslateUi
 
 };

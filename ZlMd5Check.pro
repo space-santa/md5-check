@@ -3,17 +3,12 @@
 ######################################################################
 
 TEMPLATE = app
-TARGET = 
-DEPENDPATH += . /usr/local/lib ../ZlLib
-INCLUDEPATH += . /usr/local/include ../ZlLib/header
+TARGET = ZlMd5Check
+QT += widgets
 
-# Input
-# unix:LIBS += /usr/local/lib/libZlLib.so
-unix:LIBS += ../ZlLib/libZlLib.so
-win32:LIBS += ../ZlLib/release/ZlLib.dll
-HEADERS += header/ZlMd5Check.h
+HEADERS += header/ZlMd5Check.h header/zlmessages.h header/md5.h
 FORMS += resource/ZlMd5Check.ui
-SOURCES += source/main.cc source/ZlMd5Check.cc
+SOURCES += source/main.cc source/ZlMd5Check.cc source/zlmessages.cc source/md5.cc
 RESOURCES += resource/ZlMd5Check.qrc
 #TRANSLATIONS = zlsync_de.ts
 target.path = /usr/local/bin

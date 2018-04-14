@@ -1,4 +1,4 @@
-// 
+//
 // File:   ZlMd5Check.h
 // Author: Armin Zirkel
 //
@@ -22,39 +22,35 @@
 //
 
 #ifndef _ZLMD5CHECK_H
-#define	_ZLMD5CHECK_H
+#define _ZLMD5CHECK_H
 
 #include <QtGui>
 #include "../ui_ZlMd5Check.h"
 
 class ZlMd5Check : public QMainWindow {
-	Q_OBJECT
-	public:
-		ZlMd5Check();
-		~ZlMd5Check() {}
-	
-	private:
-		Ui::MainWindow ui;
-		
-		void getSource(QLineEdit* source, QString filter);
-		void calcMd5(QString source, QLineEdit* l);
-		
-		
-	
-	private slots:
-		void on_pushButton_Open_clicked();
-		void on_pushButton_Open2_clicked();
-		void on_pushButton_Calc_clicked();
-		
-		void on_actionNew_activated();
-		void on_actionSave_activated();
-		void on_actionInfo_activated();
-		void on_actionQuit_activated();
-		
-	signals:
-	
+    Q_OBJECT
+public:
+    ZlMd5Check();
+    ~ZlMd5Check() {
+    }
+
+private:
+    Ui::MainWindow ui;
+
+    void getSource(QLineEdit* source, QString filter);
+    void calcMd5(QString source, QLineEdit* l);
+
+private slots:
+    void on_pushButton_Open_clicked();
+    void on_pushButton_Open2_clicked();
+    void on_pushButton_Calc_clicked();
+
+    void on_actionNew_activated();
+    void on_actionSave_activated();
+    void on_actionInfo_activated();
+    void on_actionQuit_activated();
+
+signals:
 };
 
-
-#endif	/* _ZLMD5CHECK_H */
-
+#endif /* _ZLMD5CHECK_H */

@@ -1,5 +1,5 @@
-//
-// File:   main.cc
+// 
+// File:   zlmessages.h
 // Author: Armin Zirkel
 //
 // Copyright (c) 2008 Armin Zirkel
@@ -18,27 +18,36 @@
 // with this program; if not, write to the Free Software Foundation, Inc.,
 // 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 //
-// Created on March 14, 2008, 3:07 PM
+// Created on 3. Februar 2008, 21:03
 //
 
-#include <QApplication>
-#include <QStringList>
-#include "../header/ZlMd5Check.h"
+#ifndef _ZLMESSAGES_H
+#define	_ZLMESSAGES_H
 
-int main(int argc, char* argv[]) {
-    QApplication app(argc, argv);
+#ifdef BUILD_DLL
+	#define EXPORT_DLL Q_DECL_EXPORT
+#else
+	#define EXPORT_DLL
+#endif
 
-    //	qDebug() << "App started!";
+#include <QtCore>
+#include <QString>
 
-    // looking for translation
-    QString locale = QLocale::system().name();
-    QTranslator translator;
-    translator.load(QString("zlsync_") + locale);
-    app.installTranslator(&translator);
+class ZlMessages : public QObject {
+	Q_OBJECT
+	public:
+		ZlMessages();
+		~ZlMessages() {}
+		
+		static void fehlermeldung(QWidget* parent, QString e);
+		static void gpl_info(QWidget* parent);
+	
+	private:
+		
+	
+	private slots:
+	
+};
 
-    ZlMd5Check* win = new ZlMd5Check;
+#endif	/* _ZLMESSAGES_H */
 
-    win->show();
-
-    return app.exec();
-}
