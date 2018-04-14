@@ -13,3 +13,6 @@ RESOURCES += resource/ZlMd5Check.qrc
 #TRANSLATIONS = zlsync_de.ts
 target.path = /usr/local/bin
 INSTALLS += target
+
+DISTFILES += \
+    README.md
