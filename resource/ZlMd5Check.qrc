@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icons" >
+        <file>Icons/exit.png</file>
+        <file>Icons/filenew.png</file>
+        <file>Icons/fileopen.png</file>
+        <file>Icons/filesave.png</file>
+        <file>Icons/messagebox_info.png</file>
+        <file>Icons/roll.png</file>
+        <file>Icons/run.png</file>
+    </qresource>
+</RCC>

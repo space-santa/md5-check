@@ -1,0 +1,7 @@
+Most or all of the Icons ar from the Nuvola-Theme of the Icon-King.
+
+They are free under the terms of the LGPL.
+
+http://www.icon-king.com/
+
+http://www.gnu.org/copyleft/lgpl.html
